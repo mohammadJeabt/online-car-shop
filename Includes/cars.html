@@ -1,0 +1,573 @@
+<!-- Adan Mwassi - 206603011 -->
+<!-- Mohammad Jebat - 211449053 -->
+<!-- Mariam Taha - 322592916 -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Cars </title>
+        
+        <!-- font awesome cdn link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  
+        <!-- custom css file link -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	</head>
+    <body>
+
+		<!-- header section starts -->
+		<header>
+			<img src="../images/logo.png" alt="" height="60px">
+			
+			<input type="checkbox" id="menu-bar">
+			<label for="menu-bar" class="fas fa-bars"></label>
+
+			<nav class="navbar">
+				<a href="../Index.html"> home </a>
+				<a href="#cars"> cars </a>
+				<a href="meeting.html"> consultation meeting </a>
+				<a href="QA.html"> QA </a>
+			</nav>
+		</header>
+		<!-- header section ends -->
+
+		<main>
+           <!-- cars section starts -->
+			<section class="cars">
+				<h1 class="heading">Car menu</h1>
+				<div class="car_container">
+					<ul class="car_filters">
+						<li>
+							<button class="car_item active-cars" data-filter="all">
+								<span>All</span>
+							</button>
+						</li>
+						
+							<li>
+							<button class="car_item" data-filter=".mercedes">
+								<img src="../images/cars_images/logo1.png" alt="">
+							</button>
+						</li>
+						
+							<li>
+							<button class="car_item" data-filter=".audi">
+								<img src="../images/cars_images/logo2.png" alt="">
+							</button>
+						</li>
+						
+							<li>
+							<button class="car_item" data-filter=".BMW">
+								<img src="../images/cars_images/logo3.png" alt="">
+							</button>
+						</li>
+						
+							<li>
+							<button class="car_item" data-filter=".kia">
+								<img src="../images/cars_images/logo4.png" alt="">
+							</button>
+						</li>
+						
+							<li>
+							<button class="car_item" data-filter=".toyota">
+								<img src="../images/cars_images/logo5.png" alt="">
+							</button>
+						</li>
+					</ul>
+					
+					<div class="car_content grid">
+						<article class="card mix mercedes">
+										
+							<h1 class="car_title"> G-Class </h1>
+							
+							<h3 class="car_subitle"> Model: G 550 SUV </h3>
+							
+							<img src="../images/cars_images/car1.png" alt="" class="car_img" height="100px">
+							
+							<h3 class="car_price"> Price: 496,235 ILS </h3>
+							
+							<button class="car_button button">
+								<a href="carInfo.html"> more details </a>
+							</button>
+		
+						</article>
+						
+						<article class="card mix audi not_allowed">
+														
+							<h1 class="car_title"> Audi A1 </h1>
+							
+							<h3 class="car_subitle"> Model: Sportback 30 TFSI </h3>
+							
+							<img src="../images/cars_images/car2.png" alt="" class="car_img" height="100px">
+							
+							<h3 class="car_price"> Price: 167,500 ILS </h3>
+							
+							<button class="car_button  not_allowed">
+								 more details
+							</button>
+						</article>
+						
+						<article class="card mix kia not_allowed">
+														
+							<h1 class="car_title"> Ceed </h1>
+							
+							<h3 class="car_subitle"> Model:ceed MVEV </h3>
+							
+							<img src="../images/cars_images/car3.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 126,900 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix BMW not_allowed">
+												
+							<h1 class="car_title"> BMW M135i </h1>
+							
+							<h3 class="car_subitle"> Model: M135i xDrive </h3>
+							
+							<img src="../images/cars_images/car4.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 373,000 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix audi not_allowed">
+														
+							<h1 class="car_title"> Audi A3 </h1>
+							
+							<h3 class="car_subitle"> Model: Sportback 35 TFSI </h3>
+							
+							<img src="../images/cars_images/car5.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 203,400 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix mercedes not_allowed">
+														
+							<h1 class="car_title"> S-Class Sedan </h1>
+							
+							<h3 class="car_subitle"> Model: S 500 4MATIC </h3>
+							
+							<img src="../images/cars_images/car6.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 394,999 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix kia not_allowed">
+													
+							<h1 class="car_title"> EV6 </h1>
+							
+							<h3 class="car_subitle"> Model: Premium 2WD </h3>
+							
+							<img src="../images/cars_images/car7.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 249,000 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix toyota not_allowed">
+													
+							<h1 class="car_title"> Rav4 </h1>
+							
+							<h3 class="car_subitle"> Model: HYBRID E-MOTION</h3>
+							
+							<img src="../images/cars_images/car8.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 232,490 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								more details
+							</button>
+						</article>
+						
+						<article class="card mix BMW not_allowed">
+													
+							<h1 class="car_title"> BMW Z4 </h1>
+							
+							<h3 class="car_subitle"> Model: M40i </h3>
+							
+							<img src="../images/cars_images/car9.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 605,000 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix toyota not_allowed">
+														
+							<h1 class="car_title"> Yaris Cross </h1>
+							
+							<h3 class="car_subitle"> Model: E 350 Sedan </h3>
+							
+							<img src="../images/cars_images/car10.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 129,990 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix mercedes not_allowed">
+													
+							<h1 class="car_title"> E-Class Sedan </h1>
+							
+							<h3 class="car_subitle"> Model: E 350 Sedan </h3>
+							
+							<img src="../images/cars_images/car11.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 195,163 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix audi not_allowed">
+													
+							<h1 class="car_title"> Audi A4 </h1>
+							
+							<h3 class="car_subitle"> Model: A4 35 </h3>
+							
+							<img src="../images/cars_images/car12.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 267,100 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix kia not_allowed">
+														
+							<h1 class="car_title"> Sorento </h1>
+							
+							<h3 class="car_subitle">  Model: Sorento 2.5 EX auto </h3>
+							
+							<img src="../images/cars_images/car13.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 246,900 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix BMW not_allowed">
+													
+							<h1 class="car_title"> BMW i4 M50 </h1>
+							
+							<h3 class="car_subitle"> Model: i4 M50 </h3>
+							
+							<img src="../images/cars_images/car14.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 549,000 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix audi not_allowed">
+														
+							<h1 class="car_title"> Audi TT  </h1>
+							
+							<h3 class="car_subitle"> Model: Roadster 40 TFSI </h3>
+							
+							<img src="../images/cars_images/car15.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 350,000 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix mercedes not_allowed">
+													
+							<h1 class="car_title"> C-Class Sedan </h1>
+							
+							<h3 class="car_subitle"> Model: C 300 Sedan </h3>
+							
+							<img src="../images/cars_images/car16.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 154,764 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix kia not_allowed">
+											
+							<h1 class="car_title"> Picanto </h1>
+							
+							<h3 class="car_subitle"> Model: 1.2 LX auto </h3>
+							
+							<img src="../images/cars_images/car17.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 92,900 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix toyota not_allowed">
+													
+							<h1 class="car_title"> Corolla Sedan </h1>
+							
+							<h3 class="car_subitle"> Model: HYBRID LIMITED  </h3>
+							
+							<img src="../images/cars_images/car18.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 164,138 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix BMW not_allowed">
+				
+							<h1 class="car_title"> BMW X7 </h1>
+							
+							<h3 class="car_subitle"> Model: X7 xDrive40d </h3>
+							
+							<img src="../images/cars_images/car19.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 920,000 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix toyota not_allowed">
+						
+							<h1 class="car_title"> Toyota C-HR  </h1>
+							
+							<h3 class="car_subitle"> Model: C-HR C-ITY </h3>
+							
+							<img src="../images/cars_images/car20.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 162,138 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix mercedes not_allowed">
+				
+							<h1 class="car_title"> GLC Coupe </h1>
+							
+							<h3 class="car_subitle"> Model: 300 4MATIC Coupe </h3>
+							
+							<img src="../images/cars_images/car21.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 186,271 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix audi not_allowed">
+				
+							<h1 class="car_title"> Audi RS </h1>
+							
+							<h3 class="car_subitle"> Model: RS e-tron GT  </h3>
+							
+							<img src="../images/cars_images/car22.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 1,176,000 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix kia not_allowed">
+											
+							<h1 class="car_title"> Stonic </h1>
+							
+							<h3 class="car_subitle"> Model: 1.4 LX auto </h3>
+							
+							<img src="../images/cars_images/car23.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 114,900 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix BMW not_allowed">
+				
+							<h1 class="car_title"> BMW M240i </h1>
+							
+							<h3 class="car_subitle"> Model: M240i xDrive </h3>
+							
+							<img src="../images/cars_images/car24.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 493,900 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix audi not_allowed">
+				
+							<h1 class="car_title"> Audi Q5 </h1>
+							
+							<h3 class="car_subitle"> Model: S-line 50 TFSIe </h3>
+							
+							<img src="../images/cars_images/car25.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 434,387 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix mercedes not_allowed">
+						
+							<h1 class="car_title"> SL Roadster </h1>
+							
+							<h3 class="car_subitle"> Model: AMG SL 55</h3>
+							
+							<img src="../images/cars_images/car26.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 487,069 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix kia not_allowed">
+					
+							<h1 class="car_title"> Sportage </h1>
+							
+							<h3 class="car_subitle"> Model: Sportage 2.0 TOP </h3>
+							
+							<img src="../images/cars_images/car27.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 175,900 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix toyota not_allowed">
+			
+							<h1 class="car_title"> Aygo X </h1>
+							
+							<h3 class="car_subitle"> Model: Aygo X PULSE </h3>
+							
+							<img src="../images/cars_images/car28.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 102,230 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix BMW not_allowed">
+				
+							<h1 class="car_title"> BMW M760e </h1>
+							
+							<h3 class="car_subitle"> Model: 760e xDrive </h3>
+							
+							<img src="../images/cars_images/car29.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 1,250,000 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details 
+							</button>
+						</article>
+						
+						<article class="card mix toyota not_allowed">
+					
+							<h1 class="car_title"> Camry </h1>
+							
+							<h3 class="car_subitle"> Model: Camry XLE </h3>
+							
+							<img src="../images/cars_images/car30.png" alt="" class="car_img">
+							
+							<h3 class="car_price"> Price: 228,392 ILS </h3>
+							
+							<button class="car_button not_allowed">
+								 more details
+							</button>
+						</article>
+						
+					</div>
+				</div>			
+			</section>
+			<!-- cars section ends -->
+		</main>
+
+        <!-- footer section starts -->
+		<footer>
+				<div class="box-container">
+					<div class="box">
+						<h1> <span>best</span> car</h1>
+						<p>Beast Car offers you a variety of new and high-quality vehicles at affordable and convenient prices.</p>
+						<p>At Beast Car you will find maximum vehicle, maximum reliability and maximum warranty.</p>
+					</div>
+
+					<div class="box">
+						<h1><span>contact</span> us</h1>	
+						<p><i class="fas fa-phone"></i>+123-456-7890.</p>
+						<p><i class="fas fa-envelope"></i>example@gmail.com</p>
+						<p><i class="fas fa-map-marker-alt"></i>tel aviv,israel - xxxxxx</p>
+					</div>
+					
+					<div class="box">
+						<h1><span>follow</span> us</h1>	
+						<a href="#" class="fab fa-facebook"></a>
+						<a href="#" class="fab fa-twitter"></a>
+						<a href="#" class="fab fa-instagram"></a>
+					</div>
+				</div>	
+				<h1 class="creat"> created by <span> adan & mohammad & mariam </span> | all rights reserved!</h1>
+		</footer>
+        <!-- footer section ends -->
+
+        <script src="../js/mixitup.min.js"></script>
+		<script src="../js/main.js"></script>
+
+	</body>
+</html>		

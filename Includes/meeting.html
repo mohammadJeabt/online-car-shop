@@ -1,0 +1,140 @@
+<!-- Adan Mwassi - 206603011 -->
+<!-- Mohammad Jebat - 211449053 -->
+<!-- Mariam Taha - 322592916 -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+       
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Consultation Meeting </title>
+        
+        <!-- font awesome cdn link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  
+        <!-- custom css file link -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	</head>
+    <body>
+        <!-- header section starts -->
+		<header>
+			<img src="../images/logo.png" alt="" height="60px">
+			
+			<input type="checkbox" id="menu-bar">
+			<label for="menu-bar" class="fas fa-bars"></label>
+
+			<nav class="navbar">
+				<a href="../Index.html"> home </a>
+				<a href="cars.html"> cars </a>
+				<a href="#consultation meeting"> consultation meeting </a>
+				<a href="QA.html"> QA </a>
+			</nav>
+		</header>
+		<!-- header section ends -->
+
+        <main>
+            <!-- meeting section starts -->
+            <section class="meeting">
+                <h1 class="heading"><span>Consultation</span>Meeting</h1>
+                <div class="container"> 
+                    <div class="formbox">
+                        <h3> Make an appointment </h3>
+						<form method="post" action="../Includes/meeting.php">
+                            <div class="dbl-field">
+                                <div class="filed name">
+                                    <input type="text" placeholder="Full name*" id="contact-name" name="contact-name" >
+                                    <i class="fas fa-user"></i>
+                                    <div class='error error-txt'>Name is required</div>
+                                </div>    
+                                <div class="filed email">
+                                    <input type="text" placeholder="Email*" id="contact-email" name="contact-email">
+                                    <i class="fas fa-envelope"></i>
+                                    <div class='error error-txt'>Email is required </div>
+                                </div>
+                            </div>
+                            <div class="dbl-field">
+                                <div class="filed phone">
+                                    <input type="text" placeholder="Phone number*" id="contact-phone" name="contact-phone">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <div class='error error-txt' id="">Phone is required</div>
+                                </div>    
+                                <div class="filed">
+                                    <input type="date" placeholder="Date:" id="date" name="date">
+                                    <i class="fa fa-calendar-alt" ></i>
+                                </div>
+                            </div>
+                            <div class="dbl-field">
+                                <div class="filed">
+                                    <select type="text" id="hour" name="hour">
+                                        <option value="" disabled selected>Time</option>
+                                        <option value="12:00-12:30">12:00-12:30</option>
+                                        <option value="13:00-13:30">13:00-13:30</option>
+                                        <option value="14:30-15:00">14:30-15:00</option>
+                                        <option value="16:30-17:30">16:30-17:30</option>
+                                        <option value="18:00-18:30">18:00-18:30</option>
+                                    </select>
+                                    <i class="fas fa-clock" ></i>
+                                </div>
+                                
+                                <div class="filed">
+                                    <select type="text" id="model" name="model">
+                                        <option value="" disabled selected> Select a model </option>
+                                        <option value="G-Class">G-CLASS - S.N: 472001</option>
+                                    </select>
+                                    <i class="fas fa-car" ></i>
+                                </div>
+                            </div>
+                            <div class="message">
+                                <textarea placeholder="Would you like to add a message?" id="msg" name="msg"></textarea>
+                                <i class="fa-solid fa-message"></i>
+                            </div>
+                            <div class="button_area">
+                                <button type="submit">Send</button>                                
+                            </div>
+                        </form>
+                    </div> 
+                    <div class="image">
+                        <img src="../images/meeting_images/meeting.jpeg" alt="" height="540px"> 
+                    </div>   
+                </div>            
+            </section>
+			<!-- meeting section ends -->         
+        </main>
+
+        <!-- footer section starts -->
+		<footer>
+            <div class="box-container">
+                <div class="box">
+                    <h1> <span>best</span> car</h1>
+                    <p>Beast Car offers you a variety of new and high-quality vehicles at affordable and convenient prices.</p>
+                    <p>At Beast Car you will find maximum vehicle, maximum reliability and maximum warranty.</p>
+                </div>
+
+                <div class="box">
+                    <h1><span>contact</span> us</h1>	
+                    <p><i class="fas fa-phone"></i>+123-456-7890.</p>
+                    <p><i class="fas fa-envelope"></i>example@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>tel aviv,israel - xxxxxx</p>
+                </div>
+                
+                <div class="box">
+                    <h1><span>follow</span> us</h1>	
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>	
+            <h1 class="creat"> created by <span> adan & mohammad & mariam </span> | all rights reserved!</h1>
+        </footer>
+        <!-- footer section ends -->
+
+        <script src="../js/meeting.js"></script>
+                
+    </body>
+</html>
